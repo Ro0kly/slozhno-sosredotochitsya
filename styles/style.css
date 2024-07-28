@@ -254,7 +254,6 @@
   }
   .header__title-decor {
     margin-top: 0;
-    margin-bottom: 0;
     grid-column: -1 / -4;
     min-width: 364px;
     width: unset;
