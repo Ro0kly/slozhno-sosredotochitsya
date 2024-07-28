@@ -2,3 +2,53 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
+
+@media (prefers-color-scheme: dark) {
+  /* Стили для тёмной темы */
+  :root {
+    --main-color: rgb(241, 178, 206);
+    --accent-dark-color: rgb(255, 0, 112);
+    --accent-light-color: rgb(219, 0, 255);
+    /* --accent-light-color: rgb(241, 178, 206); */
+    --bg-color: rgb(0, 0, 40);
+  }
+  .page.theme_auto {
+    background-image: url(../images/cover-image-dark.png);
+
+    .header {
+      &::before,
+      &::after {
+        border-color: var(--accent-dark-color);
+      }
+    }
+    .title-decor {
+      color: var(--bg-color);
+    }
+    .section-title,
+    .header__theme-menu-button {
+      color: var(--accent-dark-color);
+    }
+    .header__theme-menu-button_active {
+      border-color: var(--accent-dark-color);
+    }
+    .footer {
+      &::before,
+      &::after {
+        border-color: var(--accent-dark-color);
+      }
+    }
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  /* Стили для светлой темы */
+  :root {
+    --main-color: rgb(53, 52, 48);
+    --accent-dark-color: rgb(255, 141, 203);
+    --accent-light-color: rgb(255, 194, 230);
+    --bg-color: rgb(255, 241, 247);
+  }
+  .lamp {
+    display: none;
+  }
+}
