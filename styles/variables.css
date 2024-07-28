@@ -41,7 +41,7 @@
 }
 
 @media (prefers-color-scheme: light) {
-  /* Стили для светлой темы */
+  /* Стили для светлой темы (light) */
   :root {
     --main-color: rgb(53, 52, 48);
     --accent-dark-color: rgb(255, 141, 203);
