@@ -24,6 +24,11 @@
   .title-decor {
     color: var(--bg-color);
   }
+  .header__theme-menu-button {
+    &:focus {
+      border-bottom: 1px solid var(--accent-dark-color);
+    }
+  }
   .section-title,
   .header__theme-menu-button {
     color: var(--accent-dark-color);

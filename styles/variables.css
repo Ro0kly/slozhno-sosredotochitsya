@@ -9,12 +9,10 @@
     --main-color: rgb(241, 178, 206);
     --accent-dark-color: rgb(255, 0, 112);
     --accent-light-color: rgb(219, 0, 255);
-    /* --accent-light-color: rgb(241, 178, 206); */
     --bg-color: rgb(0, 0, 40);
   }
   .page.theme_auto {
     background-image: url(../images/cover-image-dark.png);
-
     .header {
       &::before,
       &::after {
@@ -23,6 +21,11 @@
     }
     .title-decor {
       color: var(--bg-color);
+    }
+    .header__theme-menu-button {
+      &:focus {
+        border-bottom: 1px solid var(--accent-dark-color);
+      }
     }
     .section-title,
     .header__theme-menu-button {
@@ -41,14 +44,11 @@
 }
 
 @media (prefers-color-scheme: light) {
-  /* Стили для светлой темы (light) */
+  /* Стили для светлой темы */
   :root {
     --main-color: rgb(53, 52, 48);
     --accent-dark-color: rgb(255, 141, 203);
     --accent-light-color: rgb(255, 194, 230);
     --bg-color: rgb(255, 241, 247);
-  }
-  .lamp {
-    display: none;
   }
 }

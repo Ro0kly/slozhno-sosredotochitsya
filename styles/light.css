@@ -12,7 +12,5 @@
   --accent-dark-color: rgb(255, 141, 203);
   --accent-light-color: rgb(255, 194, 230);
   --bg-color: rgb(255, 241, 247);
-  .lamp {
-    display: none;
-  }
+  --rec: none;
 }
