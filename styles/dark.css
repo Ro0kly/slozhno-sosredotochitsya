@@ -12,8 +12,8 @@
   --main-color: rgb(241, 178, 206);
   --accent-dark-color: rgb(255, 0, 112);
   --accent-light-color: rgb(219, 0, 255);
-  /* --accent-light-color: rgb(241, 178, 206); */
   --bg-color: rgb(0, 0, 40);
+  --rec: block;
   background-image: url(../images/cover-image-dark.png);
   .header {
     &::before,
@@ -29,7 +29,7 @@
       border-bottom: 1px solid var(--accent-dark-color);
     }
   }
-  .section-title,
+  .content-section__title,
   .header__theme-menu-button {
     color: var(--accent-dark-color);
   }

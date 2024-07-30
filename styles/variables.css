@@ -10,6 +10,7 @@
     --accent-dark-color: rgb(255, 0, 112);
     --accent-light-color: rgb(219, 0, 255);
     --bg-color: rgb(0, 0, 40);
+    --rec: block;
   }
   .page.theme_auto {
     background-image: url(../images/cover-image-dark.png);
@@ -27,7 +28,7 @@
         border-bottom: 1px solid var(--accent-dark-color);
       }
     }
-    .section-title,
+    .content-section__title,
     .header__theme-menu-button {
       color: var(--accent-dark-color);
     }
@@ -50,5 +51,6 @@
     --accent-dark-color: rgb(255, 141, 203);
     --accent-light-color: rgb(255, 194, 230);
     --bg-color: rgb(255, 241, 247);
+    --rec: none;
   }
 }
