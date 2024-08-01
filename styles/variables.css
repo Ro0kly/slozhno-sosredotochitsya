@@ -24,6 +24,9 @@
       color: var(--bg-color);
     }
     .header__theme-menu-button {
+      &:hover {
+        border-color: rgba(255, 0, 112, 0.4);
+      }
       &:focus {
         border-bottom: 1px solid var(--accent-dark-color);
       }

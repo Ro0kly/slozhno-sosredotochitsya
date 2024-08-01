@@ -46,6 +46,10 @@
   display: grid;
   gap: 20px;
   grid-template-columns: repeat(6, 1fr);
+  align-items: baseline;
+}
+.gallery.decorated-zone {
+  align-items: unset;
 }
 .link {
   text-decoration: none;
@@ -279,6 +283,7 @@
     grid-template-rows: 1fr min-content 1fr;
     padding-top: 10px;
     align-items: center;
+    row-gap: 6px;
   }
   .header__theme-menu-button {
     line-height: 1.2223;
@@ -287,6 +292,9 @@
     line-height: 0.82;
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   }
+  .title-decor {
+    line-height: 1.29;
+  }
   .header__title {
     margin-left: 0;
     margin-top: 0;
@@ -294,6 +302,7 @@
   .header__theme-menu {
     margin-left: auto;
     margin-right: 0;
+    /* margin-bottom: 8px; */
   }
   .header__theme-menu-list {
     flex-direction: column;
@@ -307,7 +316,7 @@
   }
   /* main */
   .main {
-    margin-top: 28px;
+    margin-top: 40px;
   }
   .content-section {
     margin-bottom: 50px;
